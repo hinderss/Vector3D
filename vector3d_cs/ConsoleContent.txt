@@ -1,0 +1,14 @@
+Choose an operation:
+1. Calculate magnitude of vector 1
+2. Calculate magnitude of vector 2
+3. Add vectors
+4. Subtract vectors
+5. Calculate dot product
+6. Calculate cross product
+7. Multiply vector by a scalar
+8. Divide vector by a scalar
+9. Check if vectors are equal
+10. Check if vector 1 is greater than vector 2
+11. Check if vector 1 is less than vector 2
+12. Calculate cos between vector 1 and vector 2
+13. Exit
