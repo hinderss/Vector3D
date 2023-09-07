@@ -62,20 +62,17 @@ namespace VectorTest
         }
 
         [TestMethod]
-        public void LenghtGetTest()
+        public void LenghtGetTest1()
         {
             var a = new Vector3D(10, 2, 5);
             Assert.AreEqual(11.357816, a.Length, 0.001);
         }
 
         [TestMethod]
-        public void LenghtSetTest()
+        public void LenghtGetTest2()
         {
-            var a = new Vector3D(10, 2, 5);
-            a.Length = 49;
-            Assert.AreEqual(43.142094, a.X, 0.001);
-            Assert.AreEqual(8.628419, a.Y, 0.001);
-            Assert.AreEqual(21.571047, a.Z, 0.001);
+            var a = new Vector3D(-8.055, 47, 4545.7);
+            Assert.AreEqual(4545.950106746113, a.Length, 0.001);
         }
 
         [TestMethod]

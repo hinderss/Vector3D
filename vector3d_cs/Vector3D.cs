@@ -10,19 +10,55 @@ namespace Vector
         ///     x - double.  Default value is 0.
         /// </summary>
         /// <remarks>The value of x-coordinate</remarks>
-        public double X = 0;
+        /// 
+        private double _x = 0;
+        public double X{
+            get
+            {
+                return _x;
+            }
+
+            set
+            { 
+                _x = value; 
+            }
+        }
 
         /// <summary>
         ///     y - double.  Default value is 0.
         /// </summary>
         ///<remarks>The value of y-coordinate</remarks>
-        public double Y = 0;
+        private double _y = 0;
+        public double Y 
+        {
+            get
+            {
+                return _y;
+            }
+
+            set
+            {
+                _y = value;
+            }
+        }
 
         /// <summary>
         ///     z - double.  Default value is 0.
         /// </summary>
         /// <remarks>The value of z-coordinate</remarks>
-        public double Z = 0;
+        private double _z = 0;
+        public double Z
+        {
+            get
+            {
+                return _z;
+            }
+
+            set
+            {
+                _z = value;
+            }
+        }
 
 
         /// <summary>
@@ -90,21 +126,15 @@ namespace Vector
         /// When you set this parameter, the vector coordinates are recalculated to match the set length without changing its direction.
         /// </remarks>
         /// The length of a Vector3D is sometimes referred to as the magnitude.</remarks>
+        /// 
+        public double _length = 0;
         public double Length
         {
             get
             {
-                return (double)Math.Sqrt(X * X + Y * Y + Z * Z);
+                _length = (double)Math.Sqrt(X * X + Y * Y + Z * Z);
+                return _length;
             }
-
-            set
-            {
-                double factor = value / Length;
-                X *= factor;
-                Y *= factor;
-                Z *= factor;
-            }
-
         }
 
         /// <summary>
